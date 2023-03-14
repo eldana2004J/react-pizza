@@ -1,0 +1,125 @@
+.cart {
+  padding: 94px 0;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__pop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  &__pizza {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+  &__w {
+    color: rgb(254, 95, 30);
+  }
+  &__b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__del {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+  }
+  &__wrapper {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+  }
+  &__plus {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 2px solid rgb(254, 95, 30);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    color: rgb(254, 95, 30);
+    font-size: 25px;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+  }
+  &__top2 {
+    color: #b6b6b6;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    justify-content: center;
+    width: 33%;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  &__item-p {
+    font-size: 18px;
+    color: rgb(141, 141, 141);
+  }
+  &__btn {
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 30px;
+    padding: 12px 15px;
+    margin-top: 58px;
+  }
+  &__btn-l {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #cacaca;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cart {
+    &__item-p {
+      font-size: 13px;
+    }
+    &__plus {
+      width: 18px;
+      height: 19px;
+    }
+  }
+}

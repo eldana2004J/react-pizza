@@ -1,0 +1,70 @@
+.header {
+  padding: 35px 0;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__cart {
+    padding: 15px 20px;
+    background: #fe5f1e;
+    border-radius: 30px;
+    a {
+      display: flex;
+      gap: 20px;
+      text-decoration: none;
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: "Poboto";
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #181818;
+  }
+  &__text {
+    font-family: "Poboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    vertical-align: middle;
+    color: #7b7b7b;
+  }
+  &__line {
+    background: rgba(255, 255, 255, 0.25);
+    width: 3px;
+    height: 25px;
+  }
+  &__total {
+    color: #fff;
+  }
+}
+
+.head_pizza_img {
+  width: 38px;
+  height: 38px;
+  margin-right: 17px;
+}
+@media screen and (max-width: 768px) {
+  .head {
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .head {
+    &__cart {
+      padding: 9px 12px;
+    }
+  }
+}
